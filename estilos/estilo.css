@@ -5,12 +5,18 @@
 
 header{
 	width: 100%;
-	background: rgba(254, 181, 87,.8);
+	background: rgba(38, 97, 156,.8);
 	height: 70px;
 	position: fixed;/*Deja el menu fijo*/
 	z-index: 10;/*Indica la importancia de una caja, entre mas alto
 	 sea el numero mayor importacia tendra*/
 }
+
+body{
+	background-size: 100% 100%;
+	background-attachment: fixed; 
+}
+
 
 .ancho{
 	width: 80%;
