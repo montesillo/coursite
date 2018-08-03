@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escuela On Line</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+
+</head>
+<body background="Imagenes/fondo.jpg">
+	<header>
+			<div class="ancho">
+				<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="registro.html">Registrate</a></li>
+					
+
+				</ul>
+			</nav>
+		</div>
+
+		
+	</header>
+
+	<div class="botones">
+
+		<form action="maestros.php" method="post">
+			<p> Bienvenido profesor</p>
+			<p style="color: white">Correo: </p><input type="text" name="email" id="email">	<br><br>
+			<p style="color: white">Contraseña: </p><input type="password" name="pass" id="pass"><br><br>
+		
+			<input type="submit" value="Inicia Sesión" name="inicio" onmouseover="vacio();">
+			<script type="text/javascript">
+				function vacio(){
+					var email = document.getElementById('email').value;
+					var password = document.getElementById('pass').value;
+
+					if (email == "" || password == "") {
+						alert('Uno o más campos estan vacios');
+					}
+				}
+			</script>
+		</form>
+
+		
+		
+	</div>
+
+</body>
+</html>
