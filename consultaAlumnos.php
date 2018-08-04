@@ -20,7 +20,7 @@
 
 		public function InsertarSQL(){
 			$this->Consulta();
-			header('location: sesion.html');
+			header('location: alumno.html');
 			return $this->cerrar;
 		}
 		public function UsuariosSQL(){
@@ -35,10 +35,20 @@
 			}
 			if($email == $_SESSION['email'] && $pass == $_SESSION['password']){
 				setcookie("maestro", $name, time()+3600);
-				 header("location: CrearCurso.php");
+				 header("location: inicio.php");
 			}
 			
 
+		}
+
+		public function ListadoSQL(){
+			$this->Consulta();
+			echo "<select>";
+			while ($reg = mysqli_fetch_array($this->sql)) {
+				 echo"<option>",$cursos = $reg['nombre'],"
+				         </option>";
+			}
+			echo "</select>";
 		}
 	}
  ?>
