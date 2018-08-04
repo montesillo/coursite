@@ -20,7 +20,7 @@
 
 		public function InsertarSQL(){
 			$this->Consulta();
-			header('location: sesion.html');
+			header('location: CursosExistentes.php');
 			return $this->cerrar;
 		}
 		public function UsuariosSQL(){
@@ -37,7 +37,19 @@
 				setcookie("maestro", $name, time()+3600);
 				 header("location: CrearCurso.php");
 			}
+			return $this->cerrar;
 			
+
+		}
+
+		public function ListadoSQL(){
+			$this->Consulta();
+			echo '<br><br><br>';
+			while ($reg = mysqli_fetch_array($this->sql)) {
+				$url = $reg['nombre'].'.php';
+				echo '<p><a style="color: white" href=', $url, '>',$reg['nombre'],'<a></p>';
+			}
+			return $this->cerrar;
 
 		}
 	}
