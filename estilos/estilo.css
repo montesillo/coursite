@@ -6,7 +6,7 @@
 header{
 	width: 100%;
 	background: rgba(38, 97, 156,.8);
-	height: 70px;
+	height: 40px;
 	position: fixed;/*Deja el menu fijo*/
 	z-index: 10;/*Indica la importancia de una caja, entre mas alto
 	 sea el numero mayor importacia tendra*/
@@ -24,31 +24,45 @@ body{
 	margin: auto;
 }
 
-nav{
-	width: 70%;
-	height: 70px;
-	
-	float: right;	
-	text-align: right;
-	padding-top: 24px;
-	box-sizing: border-box;
-}
-nav ul li{
-	display: inline;
-}
-nav ul li a{
-	color: #fff;
-	font-size: 13px;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding-left: 15px;
-	font-weight: bold; /*coloca el estilo de negritas*/
-	letter-spacing: 1px;
-	font-family: rale;
-}
-nav ul li a:hover{
-	color: #444;
-}
+			
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:right;
+			}
+			
+			.nav li a {
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background: rgba(38, 97, 156,.8);
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
 .botones{
 	float: none;
 	text-align: center;
