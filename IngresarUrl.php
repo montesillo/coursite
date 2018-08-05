@@ -32,14 +32,14 @@
 			<p style="color: white">Url: </p><input type="text" name="url" id="url">	<br><br>
 
 			<p style="color: white">Descripción: </p><textarea name="descript" id="descript" cols="40" rows="5"></textarea>	<br><br>
-			<input type="submit" value="Subir Curso" name="url" onmouseover="vacio();">
+			<input type="submit" value="Subir Curso" name="subir" onmouseover="vacio();">
 	
 	</div>
 	<script type="text/javascript">
 				function vacio(){
-					var url = document.getElementById('url').value;
+					var subir = document.getElementById('subir').value;
 					var descript = document.getElementById('descript').value;
-					if (url == "" || descript == "") {
+					if (subir == "" || descript == "") {
 						alert('Uno o más campos estan vacios');
 					}
 				}
