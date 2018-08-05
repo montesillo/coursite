@@ -10,8 +10,7 @@
 	<header>
 			<div id="header">
 			<ul class="nav">
-				<li><a href="registro.html">Registro</a></li>
-				<li><a href="index.html">Inicio</a></li>
+				<li><a href="CursosExistentes.php">Regresar</a></li>
 			</ul>
 		</div>
 	</header>
