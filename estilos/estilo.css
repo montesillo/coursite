@@ -74,3 +74,14 @@ body{
 	text-align: center;
 	padding-top: 200px;
 }
+
+div.centraTabla{
+text-align: center;
+}
+
+div.centraTabla table {
+margin: 0 auto;
+text-align: left;
+}
+
+
