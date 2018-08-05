@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHP
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<iframe width="853" height="480" src="https://www.youtube.com/embed/EmDlpyn1MUE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/b4GtxaEqy3A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+C++
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<iframe width="853" height="480" src="https://www.youtube.com/embed/tMJc8krx2n4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Android Studio
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<iframe width="768" height="480" src="https://www.youtube.com/embed/pO7STLF82Ro" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="768" height="480" src="https://www.youtube.com/embed/I7nTLm_Y5Bo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="768" height="480" src="https://www.youtube.com/embed/9a6p8Mzbf7A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Django
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<iframe width="853" height="480" src="https://www.youtube.com/embed/aUY7fW7z4uI?list=PLEtcGQaT56cg3A3r-TNoc-PyVeOuAMB4x" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/oqy_u8whXGc?list=PLEtcGQaT56cg3A3r-TNoc-PyVeOuAMB4x" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/ktEh4IqxOjU?list=PLEtcGQaT56cg3A3r-TNoc-PyVeOuAMB4x" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Java
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
