@@ -46,8 +46,11 @@
 			$this->Consulta();
 			echo '<br><br><br>';
 			while ($reg = mysqli_fetch_array($this->sql)) {
-				$url = $reg['nombre'].'.php';
-				echo '<p><a style="color: white" href=', $url, '>',$reg['nombre'],'<a></p>';
+				$id = $reg['id_curso'];
+			/*	$nombre = $reg['nombre'];
+				$url = str_replace(' ', '', $nombre);
+				$url = $url.'.php';
+			*/	echo "<p><a style=color:white href=IngresarUrl.php?id=$id>",$reg['nombre'],'<a></p>';
 			}
 			return $this->cerrar;
 
