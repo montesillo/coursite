@@ -59,7 +59,7 @@
         header("location: inicio.php");
         
       }else if ($intentos >= 3) {
-        header("location: erroractivate.php");
+        header("location: Alumnoerroractivate.php");
       }else if (empty($cor)) {
         echo "<link rel='stylesheet' type='text/css' href='estilos/estilo.css'>
         <body background='Imagenes/fondo.png'>
@@ -74,7 +74,7 @@
       }else{
         
         $intentos++;
-        header("location: erroruser.php?intentos=$intentos"); 
+        header("location: Alumnoerroruser.php?intentos=$intentos"); 
       }
       return $this->cerrar;
     }
@@ -104,7 +104,7 @@
 
       if ($intentos >= 3) {
         $intentos = 0;
-        header("location: activar.php");
+        header("location: Alumnoactivar.php");
       }
       return $this->cerrar;
     }
