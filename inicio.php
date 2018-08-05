@@ -1,7 +1,7 @@
 <?php
 include ('consultaAlumnos.php');
-  $consulta = "select nombre from cursos";
-  $base = new Alumno($consulta);
+$consulta = "select nombre from cursos";
+$base = new Alumno($consulta);
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,9 +18,15 @@ include ('consultaAlumnos.php');
 			</ul>
 		</div>
 	</header><br><br><br>
-	<h1 style="color: white" align="center">Elige tu Curso</h1><br><br><br><br>
+	<h1 style="color: white" align="center">Elige tu Curso</h1><br><br>
+	<h2 style="color: white" align="center">UNA VEZ ENTRANDO AL CURSO PARA SALIR TENDRA QUE CERRAR SESION</h2><br><br>
 	<div class="centraTabla">
-      <?php $base->ListadoSQL(); ?>
+      <form action="eleccion.php" method="post">
+      	<select name="cur">
+      	<?php $base->ListadoSQL(); ?>
+      	</select>
+      	<input type="submit" name="elegir" value="ELEGIR">
+      </form>
 	</div>
 </body>
 </html>

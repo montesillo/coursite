@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escuela On Line</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+</head>
+<body background="Imagenes/fondo.png">
+    <header>
+            <div id="header">
+            <ul class="nav">
+                <li><a href="alumno.html">Regresar</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="centraTabla">
+        <table border="1" align="center" style="color: white"><br><br><br>
+    <form action="validarcapcha2.php" method="post">
+        <tr><td><label><b>Digitos Verificadores:</b></td><td align="center"><img src="capcha.php"></label></td></tr>
+        <tr><td><label><b>Correo:</b></label></td><td><input type="text" name="mail"></td></tr>
+        <tr><td><label><b>CAPTCHA:</b></label></td><td><input type="text" name="numero"></td></tr>
+        <tr><td colspan="2" align="center"><input type="submit" value="Verificar"></td></tr>
+    </form>
+    <form action="Login.html">
+    <tr><td colspan="2" align="center"><input type="submit" value="Regresar"></td></tr>
+    </form>
+    </table>
+    </div>
+</body>
+</html>
