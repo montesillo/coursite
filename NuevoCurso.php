@@ -10,15 +10,15 @@
 	<header>
 			<div id="header">
 			<ul class="nav">
-				<li><a href="index.html">Cerrar Sesion</a></li>
-				<li><a href="inicio.php">Cursos</a></li>
-				<li><a href="CrearCurso.php">Regresar</a></li>
+				<li><a href="CerrarSesionMAestro.php">Cerrar Sesión</a></li>
+				<li><a href="index.html">Inicio</a></li>
 			</ul>
 		</div>
 	</header>
 	<?php 
-		if (!empty($_COOKIE['maestro'])) {
+		if (!isset($_COOKIE['maestro'])) {
 		header('location: maestro.html');
+		exit();
 	}
 	 ?>
 

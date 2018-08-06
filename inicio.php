@@ -19,6 +19,7 @@ $base = new Alumno($consulta);
 		</div>
 	</header><br><br><br>
 	<h1 style="color: white" align="center">Elige tu Curso</h1><br><br>
+	<h2 style="color: white" align="center">UNA VEZ ENTRANDO AL CURSO PARA SALIR TENDRA QUE CERRAR SESION</h2><br><br>
 	<div class="centraTabla">
       <form action="eleccion.php" method="post">
       	<select name="cur">

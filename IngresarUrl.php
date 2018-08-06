@@ -10,17 +10,19 @@
 	<header>
 			<div id="header">
 			<ul class="nav">
-				<li><a href="CursosExistentes.php">Regresar</a></li>
+				<li><a href="CerrarSesionMAestro.php">Cerrar Sesión</a></li>
+				<li><a href="index.html">Inicio</a></li>
 			</ul>
 		</div>
 	</header>
 	<?php 
-		if (!empty($_COOKIE['maestro'])) {
+		if (!isset($_COOKIE['maestro'])) {
 		header('location: maestro.html');
-		session_start();
+		exit();
+	}
 		
 	
-	}
+	
 		$_SESSION['id'] = $_GET['id'];
 		
 	 ?>
@@ -36,7 +38,7 @@
 	</div>
 	<script type="text/javascript">
 				function vacio(){
-					var subir = document.getElementById('subir').value;
+					var subir = document.getElementById('url').value;
 					var descript = document.getElementById('descript').value;
 					if (subir == "" || descript == "") {
 						alert('Uno o más campos estan vacios');

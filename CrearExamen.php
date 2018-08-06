@@ -26,12 +26,12 @@
 
 	$consulta = "select * from cursos";
 		$base = new Maestro($consulta);
-		$base->ListadoSQL();
+		$base->ListadoExamenSQL();
 
 	 ?>
 
 	<div class="botones">
-	
+		
 	
 	</div>
 
