@@ -124,5 +124,60 @@
       return $this->cerrar;
     }
 
+    public function ExamenSQL(){
+      $this->Consulta();
+      echo '<br><br><br><br><br>';
+      $contador = 0;
+      $rc[] = rand();
+        $re1[] = rand();
+        $re2[] = rand();
+      while ($reg = mysqli_fetch_array($this->sql)) {
+        $contador++;
+        $correcta = $reg['rc'];
+        $error1 = $reg['re1'];
+        $error2 = $reg['re2'];
+        $id = $reg['id_examen'];
+        echo '<p style=color:white >',$contador,'. ', $reg['pregunta'],'<br></p>';
+        $rc[] ="<p style=color:white><input type=radio name=$contador value=1 > $correcta   </p><br> ";
+        $re1[] =  "<p style=color:white><input type=radio name=$contador value=0> $error1    </p> <br>";
+        $re2[] = "<p style=color:white><input type=radio name=$contador value=0> $error2  </p><br>";
+
+        if ($rc['0'] >= $re1['0']) {
+          if ($rc['0'] >= $re2['0']) {
+            echo $rc[$contador];
+
+            if ($re1['0'] >= $re2['0']) {
+            echo $re1[$contador];
+            echo $re2[$contador];
+          }else{
+            echo $re2[$contador];
+            echo $re1[$contador];
+          }
+          }else{
+            echo $re2[$contador];
+            echo $rc[$contador];
+            echo $re1[$contador];
+          }
+        }else{
+          if ($re1['0'] >= $re2['0']) {
+            echo $re1[$contador];
+            if ($rc['0'] >= $re2['0']) {
+              echo $rc[$contador];
+              echo $re2[$contador];
+            }else{
+              echo $re2[$contador];
+              echo $rc[$contador];
+            }
+          }else{
+            echo $re2[$contador];
+            echo $re1[$contador];
+            echo $rc[$contador];
+          }
+        }
+        echo '<br>';
+      }
+      return $this->cerrar;
+    }
+
 }
  ?>

@@ -11,11 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="estilos/estilo.css">
 </head>
 <body background="Imagenes/fondo.png">
+
 	<header>
 		<div id="header">
 			<ul class="nav">
 				<li><a href="index.html">Cerrar Sesion</a></li>
-				<li><a href="inicio.php">Cursos</a></li>
 			</ul>
 		</div>
 	</header><br><br><br>
@@ -23,8 +23,14 @@
 	<div class="centraTabla">
       <form action="examen.php" method="post">
       	<?php $base->eleccionSQL(); ?><br><br><br>
+      	<?php
+      		//
+
+      	 	echo "<input type=text name=id value=$_POST[cur] style=visibility:hidden> "; ?><br>
       	<input type="submit" name="examen" value="REALIZAR EVALUACIÓN">
+
       </form>
 	</div>
 </body>
+
 </html>
